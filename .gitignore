@@ -45,6 +45,7 @@ out
 *.vvp
 *.xml
 log.txt
+/src/
 *.out
 *.o
 *.bin

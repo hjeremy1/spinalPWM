@@ -1,0 +1,4 @@
+read_verilog Adder.v
+prep -top Adder
+
+write_ilang database/design.il

@@ -1,0 +1,100 @@
+mutate -mode none
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 3 -wire io_b -wirebit 3 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $procdff$3 -port Q -portbit 3 -wire io_result -wirebit 3 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 5 -wire io_a -wirebit 5 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $procdff$3 -port Q -portbit 7 -wire io_result -wirebit 7 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port B -portbit 6 -wire io_b -wirebit 6 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port B -portbit 1 -wire io_b -wirebit 1 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 2 -wire io_b -wirebit 2 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $procdff$3 -port CLK -portbit 0 -wire clk -wirebit 0 -src Adder.v:11.23-11.26 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $procdff$3 -port CLK -portbit 0 -wire clk -wirebit 0 -src Adder.v:11.23-11.26 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port B -portbit 2 -wire io_b -wirebit 2 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $procdff$3 -port Q -portbit 1 -ctrlbit 4 -wire io_result -wirebit 1 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 2 -wire io_a -wirebit 2 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 1 -ctrlbit 6 -wire io_a -wirebit 1 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $procdff$3 -port ARST -portbit 0 -wire reset -wirebit 0 -src Adder.v:12.23-12.28 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 6 -wire io_a -wirebit 6 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 4 -wire io_b -wirebit 4 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $procdff$3 -port D -portbit 6 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $procdff$3 -port Q -portbit 2 -wire io_result -wirebit 2 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $procdff$3 -port ARST -portbit 0 -wire reset -wirebit 0 -src Adder.v:12.23-12.28 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port B -portbit 0 -wire io_b -wirebit 0 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $procdff$3 -port CLK -portbit 0 -wire clk -wirebit 0 -src Adder.v:11.23-11.26 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $procdff$3 -port ARST -portbit 0 -wire reset -wirebit 0 -src Adder.v:12.23-12.28 -src Adder.v:18.3-24.6
+mutate -mode cnot1 -module Adder -cell $procdff$3 -port Q -portbit 5 -ctrlbit 6 -wire io_result -wirebit 5 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot1 -module Adder -cell $procdff$3 -port Q -portbit 6 -ctrlbit 3 -wire io_result -wirebit 6 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $procdff$3 -port Q -portbit 2 -wire io_result -wirebit 2 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $procdff$3 -port Q -portbit 5 -wire io_result -wirebit 5 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port A -portbit 1 -wire io_a -wirebit 1 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 6 -wire io_a -wirebit 6 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 7 -ctrlbit 4 -wire io_b -wirebit 7 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 7 -ctrlbit 0 -wire io_a -wirebit 7 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 0 -wire io_a -wirebit 0 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 2 -ctrlbit 7 -wire io_a -wirebit 2 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $procdff$3 -port Q -portbit 4 -wire io_result -wirebit 4 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port B -portbit 3 -wire io_b -wirebit 3 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 4 -ctrlbit 2 -wire io_a -wirebit 4 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $procdff$3 -port Q -portbit 7 -ctrlbit 0 -wire io_result -wirebit 7 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 1 -ctrlbit 2 -wire io_b -wirebit 1 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port B -portbit 5 -wire io_b -wirebit 5 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 6 -ctrlbit 2 -wire io_b -wirebit 6 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $procdff$3 -port Q -portbit 1 -wire io_result -wirebit 1 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 7 -wire io_a -wirebit 7 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $procdff$3 -port Q -portbit 2 -ctrlbit 4 -wire io_result -wirebit 2 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port A -portbit 3 -wire io_a -wirebit 3 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port Y -portbit 5 -ctrlbit 1 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 0 -ctrlbit 3 -wire io_a -wirebit 0 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 0 -ctrlbit 7 -wire io_b -wirebit 0 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $procdff$3 -port Q -portbit 1 -wire io_result -wirebit 1 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot0 -module Adder -cell $procdff$3 -port Q -portbit 3 -ctrlbit 1 -wire io_result -wirebit 3 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 1 -ctrlbit 3 -wire io_b -wirebit 1 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $procdff$3 -port Q -portbit 0 -wire io_result -wirebit 0 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $procdff$3 -port Q -portbit 6 -wire io_result -wirebit 6 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 5 -wire io_a -wirebit 5 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $procdff$3 -port Q -portbit 4 -wire io_result -wirebit 4 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 7 -wire io_b -wirebit 7 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 7 -ctrlbit 6 -wire io_a -wirebit 7 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 1 -wire io_a -wirebit 1 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 5 -ctrlbit 4 -wire io_a -wirebit 5 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $procdff$3 -port Q -portbit 1 -ctrlbit 5 -wire io_result -wirebit 1 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 1 -wire io_b -wirebit 1 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 2 -ctrlbit 4 -wire io_b -wirebit 2 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 2 -wire io_b -wirebit 2 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 0 -wire io_a -wirebit 0 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 3 -ctrlbit 7 -wire io_a -wirebit 3 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $procdff$3 -port Q -portbit 4 -ctrlbit 5 -wire io_result -wirebit 4 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port A -portbit 7 -wire io_a -wirebit 7 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 6 -ctrlbit 7 -wire io_a -wirebit 6 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 0 -ctrlbit 5 -wire io_b -wirebit 0 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 5 -wire io_b -wirebit 5 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 4 -wire io_a -wirebit 4 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $procdff$3 -port Q -portbit 0 -wire io_result -wirebit 0 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 3 -wire io_b -wirebit 3 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $procdff$3 -port Q -portbit 6 -wire io_result -wirebit 6 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $procdff$3 -port Q -portbit 3 -wire io_result -wirebit 3 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot1 -module Adder -cell $procdff$3 -port Q -portbit 3 -ctrlbit 2 -wire io_result -wirebit 3 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 5 -ctrlbit 6 -wire io_b -wirebit 5 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 3 -wire io_a -wirebit 3 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 6 -wire io_b -wirebit 6 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port A -portbit 5 -wire io_a -wirebit 5 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $procdff$3 -port Q -portbit 3 -wire io_result -wirebit 3 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 3 -ctrlbit 7 -wire io_b -wirebit 3 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 3 -ctrlbit 0 -wire io_b -wirebit 3 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 2 -ctrlbit 5 -wire io_a -wirebit 2 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $procdff$3 -port Q -portbit 7 -wire io_result -wirebit 7 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 2 -wire io_a -wirebit 2 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $procdff$3 -port Q -portbit 6 -wire io_result -wirebit 6 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 5 -ctrlbit 6 -wire io_b -wirebit 5 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $procdff$3 -port Q -portbit 0 -ctrlbit 2 -wire io_result -wirebit 0 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $procdff$3 -port Q -portbit 7 -wire io_result -wirebit 7 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 4 -wire io_b -wirebit 4 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port A -portbit 2 -wire io_a -wirebit 2 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const0 -module Adder -cell $procdff$3 -port Q -portbit 0 -wire io_result -wirebit 0 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 4 -wire io_a -wirebit 4 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port B -portbit 4 -wire io_b -wirebit 4 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 0 -wire io_b -wirebit 0 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode cnot1 -module Adder -cell $add$Adder.v:22$2 -port B -portbit 4 -ctrlbit 0 -wire io_b -wirebit 4 -src Adder.v:9.23-9.27 -src Adder.v:22.25-22.36
+mutate -mode inv -module Adder -cell $add$Adder.v:22$2 -port A -portbit 0 -wire io_a -wirebit 0 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
+mutate -mode const1 -module Adder -cell $procdff$3 -port Q -portbit 4 -wire io_result -wirebit 4 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode cnot0 -module Adder -cell $procdff$3 -port Q -portbit 7 -ctrlbit 5 -wire io_result -wirebit 7 -src Adder.v:10.23-10.32 -src Adder.v:18.3-24.6
+mutate -mode const0 -module Adder -cell $add$Adder.v:22$2 -port A -portbit 1 -wire io_a -wirebit 1 -src Adder.v:8.23-8.27 -src Adder.v:22.25-22.36
